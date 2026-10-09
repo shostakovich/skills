@@ -7,7 +7,7 @@ Skills follow the [Agent Skills spec](https://agentskills.io/specification).
 - One skill per directory: `skills/<name>/SKILL.md`; `name` matches the directory.
 - Frontmatter: `name` and `description` only.
 - `description` says what the skill does and when to use it, with the words a user would say.
-- Extra files (`references/`, `scripts/`) only when `SKILL.md` can't stay small otherwise.
+- Extra files (`references/`, `scripts/`, `assets/`) only when `SKILL.md` can't stay small otherwise.
 
 ## Agent-agnostic
 
