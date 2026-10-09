@@ -11,6 +11,7 @@ Interview the user until you share an understanding of the plan.
 - Treat the plan as a tree: a decision can be asked once the decisions it depends on are settled.
 - If the request is too vague to build the tree, start with a round 0 that only clarifies what the user wants to achieve. Then explore deeper with that goal.
 - Each round, ask every decision that can be asked now, then wait for the answers.
+- When domain terms come up, apply the ubiquitous-language skill.
 
 ## What to ask
 
@@ -32,4 +33,4 @@ Start each round with what you decided, if anything, so the user can veto:
 
 ## Done
 
-When nothing relevant is left to decide, summarize the decisions and wait for an explicit go, even if you asked no questions.
+When nothing relevant is left to decide, summarize the decisions, offer an ADR with the adr skill for each one that qualifies, and wait for an explicit go, even if you asked no questions.
