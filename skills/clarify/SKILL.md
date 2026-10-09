@@ -28,7 +28,7 @@ Start each round with what you decided, if anything, so the user can veto:
 
 **Questions**
 1. **<title>**: <question, with options if any>
-   Recommendation: <your recommendation>
+   → <your recommendation>
 
 ## Done
 
