@@ -1,0 +1,17 @@
+#!/bin/sh
+set -eu
+
+max_lines=50
+status=0
+
+for dir in skills/*/; do
+  [ -d "$dir" ] || continue
+  skills-ref validate "$dir" || status=1
+  lines=$(wc -l < "${dir}SKILL.md" | tr -d ' ')
+  if [ "$lines" -gt "$max_lines" ]; then
+    echo "${dir}SKILL.md: $lines lines (max $max_lines)"
+    status=1
+  fi
+done
+
+exit $status
