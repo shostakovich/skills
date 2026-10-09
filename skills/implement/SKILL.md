@@ -8,6 +8,7 @@ Implement one issue on the current branch: a spec, a sub-issue or a change plann
 ## Before building
 
 - Fetch the issue from the argument or the conversation and state its title. If the reference is ambiguous or the issue has sub-issues, ask which one.
+- For a sub-issue, read its spec too.
 - Explore the code it touches. Use the project's terms and respect its ADRs.
 - If the current branch is the default branch, create a branch first.
 - Run the full test suite once to know what already fails.
