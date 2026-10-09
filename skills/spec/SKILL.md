@@ -35,3 +35,4 @@ Turn what was already decided into a spec.
 
 - Show the draft with any open questions you found and wait for the user's go.
 - Publish to the project's issue tracker. If it has none, ask where.
+- If the spec holds more than one slice, suggest splitting it with the split skill.
