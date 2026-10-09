@@ -10,11 +10,11 @@ Write commits, branch name and pull request in English.
 
 1. **Issue.** Take it from the argument, the branch name or the commit messages. If none is known, ship without one.
 2. **Base.** Bring in the latest base.
-3. **Review.** Have a fresh agent with no context do the final review of the full diff against the base. Decide each finding yourself: fixed, or rejected with a reason.
+3. **Review.** Run the review skill with the issue from step 1. Decide each finding it leaves open: fix it, or reject it with a reason.
 4. **Commits.** Rebuild the branch as a few atomic commits on top of the base, by any method:
    - Docs, behaviour-neutral refactoring and behaviour changes go in separate commits.
    - Tests go with the code they test.
-   - Review fixes go into the commit whose code they fix.
+   - Review fixes go into the commit whose code they fix; fixes of problems already on the base get a commit of their own.
    - Each commit passes the tests it touches; the content stays exactly as after the review.
 5. **Branch name.** If the branch is not pushed yet and its name is not short, descriptive and free of agent names such as claude or codex, rename it.
 6. **Push.** Only after the full test suite passes, apart from failures the base already has; fix failures the branch causes in the matching commit. Force-push only with `--force-with-lease`, and only if nobody else has pushed to the branch.
