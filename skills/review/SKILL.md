@@ -18,7 +18,7 @@ Review a change, verify each finding and fix what is clearly right.
   - **Correctness**: line by line; what deleted code guaranteed and whether that still holds; callers and callees of changed code.
   - **Security and tests**: new attack surface, missing tests.
   - **Spec and conventions**: missing, partial or wrong against the spec; scope creep; the project's conventions and ADRs.
-  - **Simplicity**: reuse, needless code, fixes at the wrong level, comments that repeat the code, stale docs.
+  - **Simplicity**: reuse, needless code, fixes at the wrong level, comments that restate the code, tell its history or answer a review, stale docs.
 - Review once. Tell reviewer agents to review directly, without starting this skill or more agents. The tests check your fixes, not another review.
 - Report every finding, including problems that already exist on the base. An empty result is a valid result.
 - Skip what linters and the typecheck catch, and pedantic nitpicks.
@@ -32,6 +32,7 @@ Review a change, verify each finding and fix what is clearly right.
 ## Fix
 
 - Fix confirmed findings that are clearly right, with a regression test for each bug.
+- Comment fixes as the implement skill says: almost nothing.
 - Fix small problems that already exist on the base. For larger ones, propose a separate pull request or issue for the user to create.
 - Leave taste, plausible findings, unclear intent and larger redesigns open, and say why.
 - Commit each fix on its own to the reviewed branch. On the default branch, create a branch first.

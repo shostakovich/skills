@@ -22,6 +22,7 @@ Implement one issue on the current branch: a spec, a sub-issue or a change plann
 - Then work test-first and outside-in, London school: a failing unit test with collaborators mocked, then just enough code to make it pass.
 - Add further integration tests sparingly.
 - Write clear, meticulous code from the start: small methods, names that say what they do, the project's style.
+- Comment almost nothing: only a non-obvious why, in one line. Delete comments that restate the code, tell its history or answer a review, also in code you touch.
 - Run the affected tests often, the typecheck if the project has one, and the full test suite at the end.
 - Decide open questions yourself, with the cleanest, simplest solution.
 - Stop only for a relevant problem, e.g. the issue contradicts the code, cannot be built as written, or would cause harm as written, such as a security hole or data loss. Leave the work uncommitted and report the problem.
