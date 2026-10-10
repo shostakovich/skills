@@ -12,9 +12,9 @@ Split a spec into sub-issues.
 
 ## Cutting
 
-- Cut tracer-bullet slices: each a narrow path through every layer it needs, verifiable on its own.
-- Give each slice one behaviour, with a title that needs no "and", small enough for one fresh session with its tests.
-- If the whole spec is already one such slice, say so and stop.
+- Cut tracer-bullet slices: each a path through every layer it needs, verifiable on its own.
+- Make each slice as large as one fresh session can finish with its tests; group behaviours that share a screen or a calculation, and split only where a session would not finish.
+- If the whole spec fits one such slice, say so and stop.
 - Put prefactoring first, in sub-issues of its own.
 - For a wide refactor that no slice can land green, expand, migrate in batches, then contract.
 - Give each sub-issue the sub-issues that block it, and only those.
